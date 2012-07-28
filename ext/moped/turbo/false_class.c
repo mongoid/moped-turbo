@@ -13,10 +13,9 @@
  */
 static VALUE turbo_false_bson_dump(VALUE self, VALUE io, VALUE key)
 {
-  /* io << Types::BOOLEAN */
+  /* rb_str_append(io, ""); */
   /* io << key.to_bson_cstring */
-  /* io << NULL_BYTE */
-  puts("in false bson dump");
+  /* rb_str_append(io, ""); */
   return io;
 }
 
