@@ -7,5 +7,5 @@
  */
 void Init_turbo()
 {
-  Init_false_class();
+  initialize_object_id();
 }
