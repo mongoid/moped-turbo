@@ -1,7 +1,7 @@
 Moped Turbo[![Build Status](https://secure.travis-ci.org/mongoid/moped-turbo.png?branch=master&.png)](http://travis-ci.org/mongoid/moped-turbo)
 ========
 
-Moped Turbo are C extensions for Moped, a Ruby driver for MongoDB
+Moped Turbo is C extensions for Moped, a Ruby driver for MongoDB
 
 Roadmap
 -------
