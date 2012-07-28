@@ -7,5 +7,7 @@
  */
 void Init_turbo()
 {
-  initialize_object_id();
+  VALUE moped = rb_const_get(rb_cObject, rb_intern("Moped"));
+  VALUE bson = rb_const_get(moped, rb_intern("BSON"));
+  initialize_object_id(bson);
 }
