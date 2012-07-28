@@ -3,6 +3,15 @@ Moped Turbo[![Build Status](https://secure.travis-ci.org/mongoid/moped-turbo.png
 
 Moped Turbo are C extensions for Moped, a Ruby driver for MongoDB
 
+Roadmap
+-------
+
+We identify the parts of Moped that we can get significantly faster
+in C, and add extensions for these areas. Moped's design should make
+the C parts easy and small.
+
+* `ObjectId` generation is the first candidate.
+
 Project Tracking
 ----------------
 
