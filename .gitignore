@@ -16,3 +16,6 @@ _yardoc
 doc/
 Gemfile.lock
 .DS_Store
+Makefile
+*.o
+*.bundle
