@@ -1,7 +1,7 @@
 require "rspec/core/rake_task"
 
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
-require "moped-turbo/version"
+require "moped/turbo/version"
 
 task :gem => :build
 task :build do
@@ -9,14 +9,14 @@ task :build do
 end
 
 task :install => :build do
-  system "sudo gem install moped-turbo-#{MopedTurbo::VERSION}.gem"
+  system "sudo gem install moped-turbo-#{Moped::Turbo::VERSION}.gem"
 end
 
 task :release => :build do
-  system "git tag -a v#{MopedTurbo::VERSION} -m 'Tagging #{MopedTurbo::VERSION}'"
+  system "git tag -a v#{Moped::Turbo::VERSION} -m 'Tagging #{Moped::Turbo::VERSION}'"
   system "git push --tags"
-  system "gem push moped-turbo-#{MopedTurbo::VERSION}.gem"
-  system "rm moped-turbo-#{MopedTurbo::VERSION}.gem"
+  system "gem push moped-turbo-#{Moped::Turbo::VERSION}.gem"
+  system "rm moped-turbo-#{Moped::Turbo::VERSION}.gem"
 end
 
 RSpec::Core::RakeTask.new(:spec) do |spec|
