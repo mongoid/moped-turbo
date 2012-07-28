@@ -2,11 +2,11 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require "moped-turbo/version"
+require "moped/turbo/version"
 
 Gem::Specification.new do |s|
   s.name        = "moped-turbo"
-  s.version     = Moped::VERSION
+  s.version     = Moped::Turbo::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Durran Jordan"]
   s.email       = ["durran@gmail.com"]
