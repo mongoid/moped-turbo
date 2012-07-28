@@ -10,6 +10,7 @@
  */
 static VALUE object_id_generator_next(VALUE self)
 {
+  /* Needs to return the object id as binary string */
   return self;
 }
 

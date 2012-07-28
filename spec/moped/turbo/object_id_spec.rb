@@ -8,8 +8,6 @@ describe Moped::BSON::ObjectId do
       described_class.new
     end
 
-    it "generates the object id from the c extension" do
-      p object_id.to_s
-    end
+    pending "generates the object id from the c extension"
   end
 end
