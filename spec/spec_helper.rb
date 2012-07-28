@@ -1,17 +1,16 @@
 require "rspec"
 $:.unshift((Pathname(__FILE__).dirname.parent + "lib").to_s)
+$:.unshift((Pathname(__FILE__).dirname.parent + "ext").to_s)
 
 require "moped"
 
 RSpec.configure do |config|
 
-  if ENV["CI"]
-    config.before(:suite) do
-      # Compile all the c extensions once.
+  config.before(:suite) do
+    Dir.chdir(Pathname(__FILE__).dirname.parent + "ext") do
+      `bundle exec ruby moped/turbo/extconf.rb`
+      `make`
     end
-  else
-    confir.before do
-      # Compile the c extension of the class under test.
-    end
+    require "turbo"
   end
 end
