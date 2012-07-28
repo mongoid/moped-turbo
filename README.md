@@ -11,6 +11,7 @@ in C, and add extensions for these areas. Moped's design should make
 the C parts easy and small.
 
 * `ObjectId` generation is the first candidate.
+* `__bson_dump__` / `__bson_load__` on some objects, but all are not necessary.
 
 Project Tracking
 ----------------
