@@ -1,6 +1,8 @@
 #include <ruby.h>
 #include <false_class.h>
 
+static char BOOLEAN_TYPE = 0x08;
+
 /*
  * Extension for FalseClass#__bson_dump__.
  *
@@ -11,11 +13,8 @@
  *
  * @since 0.0.0
  */
-static VALUE turbo_false_bson_dump(VALUE self, VALUE io, VALUE key)
+static VALUE turbo_false_bson_dump(VALUE io, VALUE key)
 {
-  /* rb_str_append(io, ""); */
-  /* io << key.to_bson_cstring */
-  /* rb_str_append(io, ""); */
   return io;
 }
 
