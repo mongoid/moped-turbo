@@ -15,6 +15,6 @@ Gem::Specification.new do |s|
   s.description = s.summary
 
   s.files = Dir.glob("lib/**/*") + Dir.glob("ext/**/*.{c,h,rb}") + %w(CHANGELOG.md LICENSE README.md)
-  s.extensions = [ "ext/moped-turbo/extconf.rb" ]
+  s.extensions = [ "ext/moped/turbo/extconf.rb" ]
   s.require_path = "lib"
 end
