@@ -1,3 +1,3 @@
 require "mkmf"
 $CFLAGS << " -Wall -g"
-create_makefile("turbo")
+create_makefile("moped/turbo")
