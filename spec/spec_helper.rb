@@ -11,6 +11,6 @@ RSpec.configure do |config|
       `bundle exec ruby extconf.rb`
       `make`
     end
-    require "turbo"
+    require "moped/turbo/turbo"
   end
 end
