@@ -9,6 +9,7 @@ describe Moped::BSON::ObjectId do
     end
 
     it "generates the object id from the c extension" do
+      expect(object_id.to_s.length).to eq(24)
     end
   end
 end
