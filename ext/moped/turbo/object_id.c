@@ -22,20 +22,20 @@ static VALUE object_id_generator_next(VALUE self)
   char *machine = (char*) &thread_id;
   char *count = (char*) &incremented;
 
-  // 4 Bytes for the timestamp in big endian.
+  /* 4 Bytes for the timestamp in big endian. */
   bytes[0] = timestamp[3];
   bytes[1] = timestamp[2];
   bytes[2] = timestamp[1];
   bytes[3] = timestamp[0];
 
-  // 5 bytes machine id + thread id.
+  /* 5 bytes machine id + thread id. */
   bytes[4] = machine[0];
   bytes[5] = machine[1];
   bytes[6] = machine[2];
   bytes[7] = machine[3];
   bytes[8] = machine[4];
 
-  // 4 bytes for the counter in big endian.
+  /* 4 bytes for the counter in big endian. */
   bytes[9] = count[2];
   bytes[10] = count[1];
   bytes[11] = count[0];
