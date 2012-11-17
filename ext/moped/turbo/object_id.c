@@ -1,5 +1,5 @@
 #include <ruby.h>
-#include <unistd.h>
+#include <time.h>
 
 /*
  * Extension for generation of object ids.
