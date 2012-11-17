@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.summary     = "C extensions for Moped, a Ruby driver for MongoDB"
   s.description = s.summary
 
-  s.add_dependency("moped", ["~> 1.1.3"])
+  s.add_dependency("moped", ["~> 1"])
 
   s.files = Dir.glob("lib/**/*") + Dir.glob("ext/**/*.{c,h,rb}") + %w(CHANGELOG.md LICENSE README.md)
   s.extensions = [ "ext/moped/turbo/extconf.rb" ]
