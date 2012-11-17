@@ -1,4 +1,5 @@
 #include <ruby.h>
+#include <object_id.h>
 
 /*
  * Initialize the moped turbo extensions.
